@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Schumann-Hurst Medical Group Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F06%2FDoctor-Symbol-Caduceus-PNG-File.png&f=1&nofb=1&ipt=3f4450c4de6c6daec8557d0f800145dc8a826e93a4a4c3d9fe5e12befd04188f&ipo=images" id="caduceus" alt="Gold caduceus"> 
+    <h1 id="title">Schumann-Hurst Medical Group
+    </h1>
+    <h2>
+    Survey Form
+    </h2>
+    <p id="description">Schumann-Hurst Medical Group is dedicated to optimizing the experience of our patients. Your feedback is greatly appreciated.</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="name-label" id="name-label">Enter Your First Name: <input id="name" name="name" type="text" placeholder="John" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" placeholder="Doe" required /></label>
+        <label for="email-label" id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="johndoe@genericemail.com" required /></label>
+      </fieldset>
+      <fieldset>
+      <fieldset>
+        <p>Please rate the following on a scale of one to five, one being the lowest quality and five being the highest.
+        </p>
+        <p class="ratings">Staff professionality</p>
+        <label for="staff-professionality" class="ratings">
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="1"/>1
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="2"/>2
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="3"/>3
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="4"/>4
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="5"/>5
+        </label>
+        <p class="ratings">Facility cleanliness</p>
+        <label for="staff-professionality" class="ratings">
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="1"/>1
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="2"/>2
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="3"/>3
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="4"/>4
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="5"/>5
+        </label>
+        <p class="ratings">Quality of care</p>
+        <label for="staff-professionality" class="ratings">
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="1"/>1
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="2"/>2
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="3"/>3
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="4"/>4
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="5"/>5
+        </label>
+        <p class="ratings">Promptness of care</p>
+        <label for="staff-professionality" class="ratings">
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="1"/>1
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="2"/>2
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="3"/>3
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="4"/>4
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="5"/>5
+        </label>
+        <p class="ratings">Doctor responsiveness</p>
+        <label for="staff-professionality" class="ratings">
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="1"/>1
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="2"/>2
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="3"/>3
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="4"/>4
+          <input id="staff-professionality" name="staff-professionality" type="radio" value="5"/>5
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Overall, are you satisfied with your care at Schumann-Hurst Medical Group? 
+        <label for="overall-satisfaction" name="overall-satisfaction">
+          <input id="overall-satisfaction" type="checkbox" required name="overall-satisfaction" class="inline" value="yes"/>Yes
+          <input id="overall-satisfaction" type="checkbox" required name="overall-satisfaction" class="inline" value="no"/>No
+          <label for="bio">Additional comments
+          <textarea id="additional-comments" name="additional-comments" rows="3" cols="30"></textarea>
+        </label>
+      </fieldset>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="age" id="number-label" placeholder="18" value="age">Input your age (years): <input id="number" type="number" name="age" min="13" max="120" value="age" placeholder="18"/></label>
+        <label for="referrer">How did you hear about us?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Insurance recommended providers</option>
+            <option value="2">Family member</option>
+            <option value="3">Search engine</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
